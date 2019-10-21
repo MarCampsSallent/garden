@@ -1,0 +1,153 @@
+  /* GLOBAL STYLES
+-----------------*/
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix:after { /* clearfix */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+  margin: 0;
+}
+
+h2, h3 {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 32px;
+}
+.content-wrap {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+ 
+
+/* HEADER
+----------*/
+header {
+  background: url(../images/background-2.jpg) no-repeat fixed 50%;
+  background-size: cover;
+  text-align: center;
+  padding: 150px 0;
+}
+
+/* ABOUT ME / PROFILE
+----------------------*/
+.profile {
+  background: #8e44ad;
+  font-size: 0;
+}
+.profile img {
+  width: 30%;
+
+  
+}
+.summary {
+  font-size: 16px;
+  display: inline-block;
+  width: 70%;
+  vertical-align: top;
+  padding: 1%;
+}
+
+
+/* WORK EXPERIENCE
+-------------------*/
+.work-experience {
+  background: #2980b9;
+  font-size: 0;
+}
+
+.work-experience .details, .work-experience .description {
+  font-size: 16px;
+  display:inline-block;
+  vertical-align: top;
+}
+.work-experience .details {
+  width: 30%;
+  
+}
+.work-experience .description {
+  width: 70%;
+ 
+}
+.work-experience .item {
+  border-bottom: 1px solid #ccc;
+
+}
+.work-experience .item:last-child {
+  border-bottom: none;
+}
+
+
+/* SKILLS
+----------*/
+.skills {
+  background: #27ae60;
+  text-align: center;
+  font-size: 0;
+}
+
+h2, h3, h4 {
+  font-size: 20px;
+}
+
+.columns, .skills-circles li {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+}
+.columns {
+  width: 33%;
+  
+}
+
+.skills-circles li {
+ 
+  width: 20%;
+  vertical-align: middle;
+  padding: 100px;
+  
+}
+
+.skills-circles ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+
+/* EDUCATION
+-------------*/
+.education {
+  background: #16a085;
+
+}
+
+
+
+/* CONTACT & FOOTER 
+--------------------*/
+.contact {
+  background: #c0392b;
+}
