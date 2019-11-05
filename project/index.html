@@ -37,7 +37,7 @@
 				        <a class="nav-link" href="#">AboutUs</a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link" id="pricingTrigger">Pricing</a>
+				        <a class="nav-link" href="#pricingTarget">Pricing</a>
 				      </li>
 				    </ul>
 				    <span class="navbar-text">
@@ -66,9 +66,9 @@
 		</section>
 
 		<!-- pricing FOR THE PRICING SECTION -->
-		<section class="pricing">
+		<section id="pricingTarget" class="pricing">
 			<div class="content-wrap">
-				<h2 id="pricingTarget">Pricing</h2>
+				<h2>Pricing</h2>
 
 				<div class="pricing-list clearfix">
 					<h3>List Option / Title</h3>
@@ -139,15 +139,25 @@
 		</section>
 	</body>
 	<script
-	  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
 	  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
 	  crossorigin="anonymous">
 	</script>
 <!-- this is the awesome jQuery to link the nav bar to the pricing section -->
 	<script>
-	$( "#pricingTrigger" ).click(function() {
-	  $( "#pricingTarget" ).scroll();
-	});
+	$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
 	</script>
 
 </html>
