@@ -2,16 +2,15 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>My Little Garden | Barcelona</title>
+		<title>My Little Garden / BERARDO | Barcelona</title>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600|Merriweather|Pacifico' rel='stylesheet' type='text/css'>
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/final.css">
-
-		<script src="scripts/prefixfree.min.js"></script>
 	</head>
 	<body>
-		<!-- HEADER -->
+		<!-- HEADER
 		<nav>
 			<ul>
 				<li><a href="exercise7-home.html">Our Story</a></li>
@@ -21,8 +20,36 @@
 			</ul>
 		</nav>
 
+		coment end here if you delete that you go back to the old nov bar-->
+
+	<!-- NEW NAW BAR by Mar -->
+				<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+				  <a class="navbar-brand" href="#">Berardo</a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarText">
+				    <ul class="navbar-nav mr-auto">
+				      <li class="nav-item active">
+				        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#">AboutUs</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" id="pricingTrigger">Pricing</a>
+				      </li>
+				    </ul>
+				    <span class="navbar-text">
+				      my little garden
+				    </span>
+				  </div>
+				</nav>
+
+
+
 		<header>
-			<h1>My Little Garden wow</h1>
+			<h1>Berardo: My Little Garden</h1>
 			<h2>Building Green Communities</h2>
 		</header>
 
@@ -37,6 +64,56 @@
 				</div>
 			</div>
 		</section>
+
+		<!-- pricing FOR THE PRICING SECTION -->
+		<section class="pricing">
+			<div class="content-wrap">
+				<h2 id="pricingTarget">Pricing</h2>
+
+				<div class="pricing-list clearfix">
+					<h3>List Option / Title</h3>
+
+					<div class="columns">
+						<h4>Best at:</h4>
+						<ul>
+							<li><i class="fa fa-check"></i> HTML / HTML5</li>
+							<li><i class="fa fa-check"></i> CSS / CSS3</li>
+							<li><i class="fa fa-check"></i> Less / Sass</li>
+							<li><i class="fa fa-check"></i> JavaScript / jQuery</li>
+						</ul>
+					</div>
+					<div class="columns">
+						<h4>Worked with:</h4>
+						<ul>
+							<li><i class="fa fa-check"></i> Wordpress</li>
+							<li><i class="fa fa-check"></i> PHP</li>
+							<li><i class="fa fa-check"></i> Processing</li>
+						</ul>
+					</div>
+					<div class="columns">
+						<h4>Learning:</h4>
+						<ul>
+							<li><i class="fa fa-check"></i> angular.js</li>
+							<li><i class="fa fa-check"></i> Stylus</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="pricing-circles">
+					<h3>Circle Option / Title</h3>
+					<ul>
+						<li><span>Social Media</span></li>
+						<li><span>Marketing Strategy</span></li>
+						<li><span>Brand Identity</span></li>
+						<li><span>Graphic Design</span></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+
+
+
 
 		<!-- CONTACT INFO -->
 		<section class="contact">
@@ -61,4 +138,16 @@
 			</div>
 		</section>
 	</body>
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+	  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+	  crossorigin="anonymous">
+	</script>
+<!-- this is the awesome jQuery to link the nav bar to the pricing section -->
+	<script>
+	$( "#pricingTrigger" ).click(function() {
+	  $( "#pricingTarget" ).scroll();
+	});
+	</script>
+
 </html>
