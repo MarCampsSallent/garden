@@ -65,7 +65,7 @@ a {
 }
 a:hover {
   color: #fff;
-  text-decoration: none;
+  text-decoration: #fff;
 }
 
 .content-wrap {
