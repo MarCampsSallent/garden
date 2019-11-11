@@ -165,29 +165,29 @@ nav a {
 
 /* WORK EXPERIENCE
 -------------------*/
-.work-experience .date {
+.our-story .date {
   margin: 5px 0 20px 0;
   font-size: 12px;
 }
-.work-experience h3 {
+.our-story h3 {
   line-height: 1.25;
   font-size: 16px;
 }
-.work-experience strong {
+.our-story strong {
   font-weight: 400;
   text-transform: uppercase;
 }
-.work-experience .details {
+.our-story .details {
   float: left;
   width: 30%;
   padding-right: 30px;
 }
-.work-experience .description {
+.our-story .description {
   font-size: 14px;
   width: 70%;
   float: right;
 }
-.work-experience .description p:first-child {
+.our-story .description p:first-child {
   margin-top: 8px;
 }
 
@@ -279,4 +279,41 @@ footer {
   clear: both;
   font-size: 12px;
   margin-top: 50px;
+}
+
+/* VISIT */
+.visit {
+  background: url(../images/contact.jpg) no-repeat fixed;
+  background-size: cover;
+
+}
+.visit form {
+  background: white;
+  width: 600px;
+  margin: 10px auto;
+  border-radius: 4px;
+  padding: 20px;
+  position: center fixed;
+}
+.visit form h2 {
+  text-align: center;
+}
+.visit form input, .visit form textarea {
+  width: 100%;
+  border: 1px solid #d8d8d8;
+  padding: 5px;
+}
+.visit form input:focus, .visit form textarea:focus {
+  outline: none;
+  border: 1px solid #bf6d50;
+}
+.visit form textarea {
+  height: 100px;
+}
+.visit form input[type="submit"] {
+  width: auto;
+  padding: 10px 20px;
+  background: #0e6e20;
+  color: white;
+  cursor: pointer;
 }
