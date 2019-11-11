@@ -9,18 +9,8 @@
 		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/final.css">
 	</head>
-	<body>
-		<!-- HEADER
-		<nav>
-			<ul>
-				<li><a href="exercise7-home.html">Our Story</a></li>
-				<li><a href="#">Visit Us</a></li>
-				<li><a href="#">Contact US</a></li>
-				<li><a href="#">Our Network</a></li>
-			</ul>
-		</nav>
-
-		coment end here if you delete that you go back to the old nov bar-->
+	<body id="homeTarget">
+		<!-- PLEAS ALWAYS ADD COMENTS TO DEFINE WHATs THE NEW SECTION ABOUT-->
 
 	<!-- NEW NAW BAR by Mar -->
 				<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
@@ -31,14 +21,17 @@
 				  <div class="collapse navbar-collapse" id="navbarText">
 				    <ul class="navbar-nav mr-auto">
 				      <li class="nav-item active">
-				        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				        <a class="nav-link" href="#homeTarget">Home <span class="sr-only">(current)</span></a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link" href="#">Our Story</a>
-				      </li>
+				        <a class="nav-link" href="#storyTarget">Our Story</a>
+							</li>
 				      <li class="nav-item">
 				        <a class="nav-link" href="#pricingTarget">Pricing</a>
 				      </li>
+							<li class="nav-item">
+									<a class="nav-link" href="visitus.html">Vist us</a>
+							</li>
 				    </ul>
 				    <span class="navbar-text">
 				      my little garden
@@ -74,7 +67,7 @@
 		</section>
 
 		<!-- Our Story -->
-		<section class="our-story">
+		<section id="storyTarget" class="our-story">
 			<div class="content-wrap">
 				<h2>Our Story</h2>
 
@@ -127,7 +120,7 @@
 				</div><!-- close .job-item -->
 			</div>
 		</section>
-		
+
 		<!-- pricing FOR THE PRICING SECTION -->
 		<section id="pricingTarget" class="pricing">
 			<div class="content-wrap">
@@ -200,10 +193,11 @@
 	</body>
 	<script
 	  src="https://code.jquery.com/jquery-3.4.1.min.js"
-	  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 	  crossorigin="anonymous">
 	</script>
-<!-- this is the awesome jQuery to link the nav bar to the pricing section -->
+<!-- this is the awesome jQuery to link the nav bar to the pricing section
+seems like the speed of scrolling is too quick -->
 	<script>
 	$(document).ready(function(){
   $("a").on('click', function(event) {
