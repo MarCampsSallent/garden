@@ -22,7 +22,6 @@ body {
   background-size: cover;
 }
 
-
 nav {
   font-family: "Arial", sans-serif;
 }
@@ -108,8 +107,9 @@ nav a {
 
 /* COMMON SECTION STYLES
 -------------------------*/
-.work-experience,
-.education {
+.our-story,
+.how-works,
+.about-us {
   background: #fefefe;
 }
 
