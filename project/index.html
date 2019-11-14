@@ -4,7 +4,6 @@
 		<meta charset="UTF-8">
 		<title>My Little Garden / BERARDO | Barcelona</title>
 		<link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Pacifico|Satisfy&display=swap" rel='stylesheet' type='text/css'>
-		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/final.css">
 		<link rel="shortcut icon" href="planting.ico">
@@ -25,15 +24,15 @@
 				      <li class="nav-item">
 				        <a class="nav-link" href="aboutus.html">About us</a>
 							</li>
-						 <li class="nav-item">
+						  <li class="nav-item">
 								 <a class="nav-link" href="visitus.html">Vist us</a>
-						 </li>
-						 <li class="nav-item">
-					 		<a class="nav-link" href="#worksTarget">How it works?</a>
-					 	</li>
-							<li class="nav-item">
+						  </li>
+						  <li class="nav-item">
+					 		  <a class="nav-link" href="#worksTarget">How it works?</a>
+					 	  </li>
+						  <li class="nav-item">
 				        <a class="nav-link" href="#pricingTarget">Pricing</a>
-							</li>
+						  </li>
 				    </ul>
 				    <span class="navbar-text">
 				      my little garden
@@ -58,7 +57,8 @@
 			</div>
 			</div>
 		</section>
-
+		<!-- EMPTY SECTION -->
+		<div id="empty"></div>
 		<!-- HOW IT WORKS new section -->
 		<section id="worksTarget" class="how-works">
 			<div class="content-wrap">
@@ -73,14 +73,12 @@
 				</p>
 			</div>
 		</section>
-
 		<!--PRICING-->
 		<section id="pricingTarget" class="pricing">
 			<div class="content-wrap">
 				<h2>Discover our pricing packages</h2>
 				<div class="pricing-list clearfix">
 					<h3>What will you get?</h3>
-
 					<div class="columns">
 						<h4>Support:</h4>
 						<ul>
@@ -106,7 +104,6 @@
 						</ul>
 					</div>
 				</div>
-
 				<div class="pricing-circles">
 					<h3>What will you pay?</h3>
 					<ul>
@@ -118,7 +115,8 @@
 				</div>
 			</div>
 		</section>
-
+		<!-- Google Maps API -->
+		<div id="map"></div>
 		<!-- FOOTER/CONTACT INFO -->
 		<section class="contact">
 			<div class="content-wrap clearfix">
@@ -128,20 +126,30 @@
 					<a href="https://twitter.com/BerardoGarden" title="Twitter"><i class="fa fa-twitter"></i></a>
 					<a href="https://www.linkedin.com/in/marcampssallent/" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
 				</div>
-
 				<p><a href="mailto:hello@berardogarden.com">hello@berardogarden.com</a></p>
 				<p>+34.123.4567</p>
 				<p>123 Anywhere St.<br>
 				 Barcelona, Spain</p>
-
 				<footer>
 					<p class="copyright">&#169; 2019 by Berardo: My Little Garden</p>
 				</footer>
 			</div>
 		</section>
-
 	</body>
-	<script
+	<script>
+			// Initialize and add the map BERARDO: 41.559222, 2.064889
+			function initMap() {
+			  var berardo = {lat: 41.559222, lng: 2.064889};
+			  var map = new google.maps.Map(
+			      document.getElementById('map'), {zoom: 17, center: berardo, mapTypeId:'satellite'});
+			  var marker = new google.maps.Marker({position: berardo, map: map});
+			}
+	</script>
+	</script>
+	 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8T-f1mbHQkSIi_laMFVmjrvmOfBAC4Nk&callback=initMap"
+	 async defer>
+	</script>
+	<script>
 	  src="https://code.jquery.com/jquery-3.4.1.min.js"
 	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 	  crossorigin="anonymous">

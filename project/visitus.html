@@ -4,7 +4,6 @@
 		<meta charset="UTF-8">
 		<title>My Little Garden</title>
 		<link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Pacifico|Satisfy&display=swap" rel='stylesheet' type='text/css'>
-		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/final.css" rel="stylesheet">
 		<link rel="shortcut icon" href="planting.ico">
@@ -25,15 +24,15 @@
 						<li class="nav-item">
 							<a class="nav-link" href="aboutus.html">About us</a>
 						</li>
-						</li>
-					 <li class="nav-item">
-							 <a class="nav-link" href="visitus.html">Vist us</a>
-					 </li>
-					 <li class="nav-item">
-						<a class="nav-link" href="index.html">How it works?</a>
-					</li>
+					  <li class="nav-item">
+							<a class="nav-link" href="visitus.html">Vist us</a>
+					  </li>
+					  <li class="nav-item">
+							<a class="nav-link" href="index.html">How it works?</a>
+					  </li>
 						<li class="nav-item">
 							<a class="nav-link" href="index.html">Pricing</a>
+						</li>
 					</ul>
 					<span class="navbar-text">
 						my little garden
@@ -67,20 +66,39 @@
 			    <input type="submit" value="SEND">
 				</form>
 			</section>
-
-			<!-- FOOTER/SOCIAL -->
+			<!-- EMPTY SECTION -->
+			<div id="empty"></div>
+			<!-- Google Maps API -->
+			<div id="map"></div>
+			<!-- FOOTER/CONTACT INFO -->
 			<section class="contact">
-			  <div class="content-wrap clearfix">
-
+				<div class="content-wrap clearfix">
+					<h2>Get in touch to find out more! </h2>
 					<div class="social">
-			      <a href="https://twitter.com/BerardoGarden" title="Twitter"><i class="fa fa-twitter"></i></a>
-			      <a href="https://www.linkedin.com/in/marcampssallent/" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-			    </div>
-
+						<a href="https://twitter.com/BerardoGarden" title="Twitter"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.linkedin.com/in/marcampssallent/" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+					</div>
+					<p><a href="mailto:hello@berardogarden.com">hello@berardogarden.com</a></p>
+					<p>+34.123.4567</p>
+					<p>123 Anywhere St.<br>
+					 Barcelona, Spain</p>
 					<footer>
-			      <p class="copyright">&#169; 2019 by Berardo: My Little Garden</p>
-			    </footer>
-			  </div>
+						<p class="copyright">&#169; 2019 by Berardo: My Little Garden</p>
+					</footer>
+				</div>
 			</section>
 	</body>
+	<script>
+			// Initialize and add the map BERARDO: 41.559222, 2.064889
+			function initMap() {
+			  var berardo = {lat: 41.559222, lng: 2.064889};
+			  var map = new google.maps.Map(
+			      document.getElementById('map'), {zoom: 17, center: berardo, mapTypeId:'satellite'});
+			  var marker = new google.maps.Marker({position: berardo, map: map});
+			}
+	 </script>
+   </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8T-f1mbHQkSIi_laMFVmjrvmOfBAC4Nk&callback=initMap"
+    async defer>
+	 </script>
 </html>

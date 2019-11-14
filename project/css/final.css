@@ -85,26 +85,6 @@ header {
   color: #f8f9fa;
 }
 
-/* NAVIGATION MENU
------------------------------------------*/
-nav {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-}
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-nav ul li {
-  display: inline-block;
-}
-nav a {
-  padding: 5px 15px;
-  text-transform: none;
-  color: white;
-}
 
 /* COMMON SECTION STYLES
 -------------------------*/
@@ -287,3 +267,15 @@ footer {
   color: white;
   cursor: pointer;
 }
+/* MAP
+---------*/
+    #map {
+      height: 400px;  /* The height is 400 pixels */
+      width: 100%;  /* The width is the width of the web page */
+     }
+/* EMPTY
+---------*/
+     #empty {
+       height: 100px;  /* The height is 400 pixels */
+       width: 100%;  /* The width is the width of the web page */
+      }
