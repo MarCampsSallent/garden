@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>My Little Garden</title>
+		<link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Pacifico|Satisfy&display=swap" rel='stylesheet' type='text/css'>
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/final.css" rel="stylesheet">
+		<link rel="shortcut icon" href="planting.ico">
+	</head>
+	<body class="visit">
+		<div class="wrapper">
+			<!-- NEW NAW BAR by Mar also for prep clicking on the logo-->
+			<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" href="index.html">Berardo</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarText">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="aboutus.html">About us</a>
+						</li>
+					  <li class="nav-item">
+							<a class="nav-link" href="visitus.html">Vist us</a>
+					  </li>
+					  <li class="nav-item">
+							<a class="nav-link" href="index.html">How it works?</a>
+					  </li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Pricing</a>
+						</li>
+					</ul>
+					<span class="navbar-text">
+						my little garden
+					</span>
+				</div>
+			</nav>
+
+			<!-- HEADER -->
+			<!-- changed the sizing in css for this -->
+			<header>
+				<span class="highlight">
+			</header>
+			<section>
+				<form action="http://forms.brace.io/hello@your-email.com" method="POST">
+					<h2>Visit us!</h2>
+
+					<p><strong>To book an appointment, send us a message at <a href="mailto:marcampssallent@gmail.com">hello@berardogarden.com</a>, call us at (+34) 933000000 or use the form below.
+					</strong></p>
+					<p>
+						<label for="name">Name</label>
+			    	<input id="name" type="text" name="name">
+					</p>
+			    <p>
+			    	<label for="email">Email</label>
+			    	<input id="email" type="email" name="replyto">
+			    </p>
+			    <p>
+			    	<label for="message">Message</label>
+			    	<textarea id="message" name="message"></textarea>
+			    </p>
+			    <input type="submit" value="SEND">
+				</form>
+			</section>
+			<!-- EMPTY SECTION -->
+			<div id="empty"></div>
+			<!-- Google Maps API -->
+			<div id="map"></div>
+			<!-- FOOTER/CONTACT INFO -->
+			<section class="contact">
+				<div class="content-wrap clearfix">
+					<h2>Get in touch to find out more! </h2>
+					<div class="social">
+						<a href="https://twitter.com/BerardoGarden" title="Twitter"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.linkedin.com/in/marcampssallent/" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+					</div>
+					<p><a href="mailto:hello@berardogarden.com">hello@berardogarden.com</a></p>
+					<p>+34.123.4567</p>
+					<p>123 Anywhere St.<br>
+					 Barcelona, Spain</p>
+					<footer>
+						<p class="copyright">&#169; 2019 by Berardo: My Little Garden</p>
+					</footer>
+				</div>
+			</section>
+	</body>
+	<script>
+			// Initialize and add the map BERARDO: 41.559222, 2.064889
+			function initMap() {
+			  var berardo = {lat: 41.559222, lng: 2.064889};
+			  var map = new google.maps.Map(
+			      document.getElementById('map'), {zoom: 17, center: berardo, mapTypeId:'satellite'});
+			  var marker = new google.maps.Marker({position: berardo, map: map});
+			}
+	 </script>
+   </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8T-f1mbHQkSIi_laMFVmjrvmOfBAC4Nk&callback=initMap"
+    async defer>
+	 </script>
+</html>
