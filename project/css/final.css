@@ -1,13 +1,11 @@
 /* GLOBAL STYLES
 -----------------*/
-/* apply a natural box layout model to all elements */
+/* Apply a natural box layout model to all elements */
 *, *:before, *:after {
   box-sizing: border-box;
 }
 
-/* Fixes the clearing of floats on child elements -
-This class should be added to the parent element to
-force clear the floats of the child elements */
+/* Fixes the clearing of floats on child elements */
 .clearfix:after {
   content: "";
   display: table;
@@ -17,7 +15,7 @@ force clear the floats of the child elements */
 body {
   font-family: "Merriweather", serif;
   line-height: 1.5;
-  background: url(../images/background-1.jpg) no-repeat fixed;
+  background: url(../images/background.jpg) no-repeat fixed;
   background-position: 50%;
   background-size: cover;
 }
@@ -25,7 +23,6 @@ body {
 nav {
   font-family: "Arial", sans-serif;
 }
-
 
 h1 {
   font-family: "Satisfy", cursive;
@@ -39,7 +36,6 @@ h1 {
 .navbar-text {
   font-family: "Satisfy", cursive;
 }
-
 
 h2, h3, h4 {
   font-family: "Open Sans", sans-serif;
@@ -85,7 +81,6 @@ header {
   color: #f8f9fa;
 }
 
-
 /* COMMON SECTION STYLES
 -------------------------*/
 .how-works,
@@ -100,10 +95,11 @@ header {
 }
 
 /* PROFILE
-----------------------*/
+-------------*/
 .profile {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
 }
+
 .profile h2 {
   background: #0fa366;
   display: inline-block;
@@ -114,43 +110,51 @@ header {
   border: none;
   transition: all 0.5s ease;
 }
+
 .profile h2:hover {
   transform: rotate(4deg);
 }
+
 .profile .summary {
   float: left;
   width: 100%;
 }
+
 .profile ul {
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
 }
+
 /* ABOUT US
--------------------------------*/
-/* new section - timeline */
+------------*/
 .item {
   border-bottom: 1px solid #ccc;
   margin-bottom: 20px;
   padding: 20px 0;
 }
+
 .item:last-child {
   border-bottom: none;
   margin-bottom: 0;
 }
+
 .about-us .details {
   float: left;
   width: 30%;
   padding-right: 30px;
 }
+
 .about-us .description {
   font-size: 15px;
   width: 80%;
   float: right;
 }
+
 .about-us .description p:first-child {
   margin-top: 8px;
 }
+
 .date {
   font-family: "Satisfy", cursive;
   font-size: 30px;
@@ -162,30 +166,36 @@ header {
 /* PRICING
 ----------*/
 .pricing {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/background-1.jpg) no-repeat fixed 50%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/background.jpg) no-repeat fixed 50%;
   background-size: cover;
   text-align: center;
   font-size: 20px;
 }
+
 .pricing h3 {
   margin: 20px;
 }
+
 .pricing h4 {
   margin-bottom: 10px;
   color: #0fa366;
 }
+
 .pricing i {
   color: #0fa366;
 }
+
 .pricing-list .columns {
   width: 33.33%;
   float: left;
 }
+
 .pricing-list ul,
 .pricing-circles ul {
   list-style-type: none;
   padding: 0;
 }
+
 .pricing-circles ul li {
   height: 150px;
   width: 150px;
@@ -196,10 +206,29 @@ header {
   border-radius: 50%;
   background: black;
 }
+
 .pricing-circles span {
   line-height: normal;
   display: inline-block;
   vertical-align: middle;
+}
+
+/* VISIT
+---------*/
+.visit {
+  background: url(../images/visit.jpg) no-repeat fixed;
+  background-size: cover;
+}
+
+#googleform {
+  text-align: center;
+}
+
+/* MAP
+---------*/
+#map {
+  height: 300px;  /* The height is 400 pixels */
+  width: 100%;  /* The width is the width of the web page */
 }
 
 /* CONTACT & FOOTER
@@ -207,75 +236,32 @@ header {
 .contact {
   background: #111;
 }
+
 .contact p {
   margin: 0;
 }
+
 .contact p:first-of-type {
   margin-top: 35px;
 }
+
 .social {
   width: 50%;
   float: right;
   text-align: right;
   font-size: 30px;
 }
+
 .social a {
   margin: 0 8px;
 }
+
 .social a:hover {
   color: white;
 }
+
 footer {
   clear: both;
   font-size: 12px;
   margin-top: 50px;
 }
-
-/* VISIT
----------*/
-.visit {
-  background: url(../images/contact.jpg) no-repeat fixed;
-  background-size: cover;
-}
-.visit form {
-  background: white;
-  width: 800px;
-  margin: 50px auto;
-  border-radius: 4px;
-  padding: 20px;
-  position: center fixed;
-}
-.visit form h2 {
-  text-align: center;
-}
-.visit form input, .visit form textarea {
-  width: 100%;
-  border: 1px solid #d8d8d8;
-  padding: 5px;
-}
-.visit form input:focus, .visit form textarea:focus {
-  outline: none;
-  border: 1px solid #bf6d50;
-}
-.visit form textarea {
-  height: 100px;
-}
-.visit form input[type="submit"] {
-  width: auto;
-  padding: 10px 20px;
-  background: #0fa366;
-  color: white;
-  cursor: pointer;
-}
-/* MAP
----------*/
-    #map {
-      height: 400px;  /* The height is 400 pixels */
-      width: 100%;  /* The width is the width of the web page */
-     }
-/* EMPTY
----------*/
-     #empty {
-       height: 100px;  /* The height is 400 pixels */
-       width: 100%;  /* The width is the width of the web page */
-      }

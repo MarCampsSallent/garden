@@ -8,10 +8,9 @@
 		<link href="css/final.css" rel="stylesheet">
 		<link rel="shortcut icon" href="planting.ico">
 	</head>
-
 	<body class="visit">
 		<div class="wrapper">
-			<!-- NEW NAW BAR by Mar also for prep clicking on the logo-->
+	<!-- NEW NAW BAR by Mar also for prep clicking on the logo-->
 			<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
 				<a class="navbar-brand" href="index.html">Berardo</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,18 +40,32 @@
 				</div>
 			</nav>
 
-			<!-- HEADER -->
-			<!-- changed the sizing in css for this -->
+		<!-- HEADER -->
 			<header>
 				<span class="highlight">
 			</header>
 
-			<!-- EMPTY SECTION -->
-			<div id="empty"></div>
-			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeBuwUgca6TBxd5B0fZvdR4C03pnNE4hNbhp-XMBgBJUxmang/viewform?embedded=true" width="800" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-			<!-- Google Maps API -->
+		<!-- VISIT US-FORM -->
+			<div id="googleform">
+				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeBuwUgca6TBxd5B0fZvdR4C03pnNE4hNbhp-XMBgBJUxmang/viewform?embedded=true" width="800" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+			</div>
+
+		<!-- Google Maps API -->
 			<div id="map"></div>
-			<!-- FOOTER/CONTACT INFO -->
+				<script>
+					// Initialize and add the map BERARDO: 41.559222, 2.064889
+					function initMap() {
+						var berardo = {lat: 41.559222, lng: 2.064889};
+						var map = new google.maps.Map(
+								document.getElementById('map'), {zoom: 17, center: berardo, mapTypeId:'satellite'});
+						var marker = new google.maps.Marker({position: berardo, map: map});
+					}
+			 </script>
+				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8T-f1mbHQkSIi_laMFVmjrvmOfBAC4Nk&callback=initMap"
+				async defer>
+			 	</script>
+
+		<!-- FOOTER/CONTACT INFO -->
 			<section class="contact">
 				<div class="content-wrap clearfix">
 					<h2>Get in touch to find out more! </h2>
@@ -62,25 +75,12 @@
 					</div>
 					<p><a href="mailto:hello@berardogarden.com">hello@berardogarden.com</a></p>
 					<p>+34.123.4567</p>
-					<p>123 Anywhere St.<br>
+					<p>Unnamed Road<br>
 					 Barcelona, Spain</p>
-					<footer>
-						<p class="copyright">&#169; 2019 by Berardo: My Little Garden</p>
-					</footer>
-				</div>
-			</section>
+				<footer>
+					<p class="copyright">&#169; 2019 by Berardo: My Little Garden</p>
+				</footer>
+			</div>
+		</section>
 	</body>
-	<script>
-			// Initialize and add the map BERARDO: 41.559222, 2.064889
-			function initMap() {
-			  var berardo = {lat: 41.559222, lng: 2.064889};
-			  var map = new google.maps.Map(
-			      document.getElementById('map'), {zoom: 17, center: berardo, mapTypeId:'satellite'});
-			  var marker = new google.maps.Marker({position: berardo, map: map});
-			}
-	 </script>
-   </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8T-f1mbHQkSIi_laMFVmjrvmOfBAC4Nk&callback=initMap"
-    async defer>
-	 </script>
 </html>
