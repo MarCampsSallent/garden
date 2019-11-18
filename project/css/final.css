@@ -80,6 +80,13 @@ header {
   padding: 150px 0;
   color: #0fa366;
 }
+.how-works{
+  line-height: 45px;
+}
+.details{
+  line-height: 30px;
+}
+
 
 /* COMMON SECTION STYLES
 -------------------------*/
