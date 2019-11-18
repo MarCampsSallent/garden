@@ -29,7 +29,7 @@ h1 {
   font-size: 80px;
   font-weight: 300;
   margin: 0;
-  text-shadow: 5px 5px #0d0d0d;
+  text-shadow: 5px 1px 3px #060606;
 }
 
 .navbar-brand,
@@ -78,7 +78,7 @@ a:hover {
 header {
   text-align: center;
   padding: 150px 0;
-  color: #f8f9fa;
+  color: #0fa366;
 }
 
 /* COMMON SECTION STYLES
